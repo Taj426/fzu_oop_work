@@ -58,6 +58,7 @@ void Body::Add() {
 	}
 	Var.Add(part[0], GetedNum);
 }
+
 void Body::Reduce() {
 	if (cnt != 3) {
 		Exception(1);

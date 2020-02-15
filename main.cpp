@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 	Body my;
 	my.Clear();
 	my.Num.MakeTable();
+
 	while(std::getline(std::cin, s)) {
 		if (my.Parse(s)) {
 			my.Choose();

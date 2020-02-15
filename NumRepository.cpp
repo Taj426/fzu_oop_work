@@ -23,4 +23,8 @@ void NumRepository::MakeTable() {
 	for (auto it : chs2num) {
 		num2chs[it.second] = it.first;
 	}// deal with num to chs
+	for (int i = 1; i <= 99; ++i) {
+		chs2num[base_num[11] + num2chs[i]] = -i;
+		num2chs[-i] = base_num[11] + num2chs[i];
+	}// add - 
 }

@@ -26,7 +26,7 @@ void VarRepository::Add(std::string name, int val) {
 void VarRepository::Reduce(std::string name, int val) {
 	int now = var[name];
 	now -= val;
-	if (now < 0) {
+	if (now < -99) {
 		Exception(7);
 		return ;
 	}
